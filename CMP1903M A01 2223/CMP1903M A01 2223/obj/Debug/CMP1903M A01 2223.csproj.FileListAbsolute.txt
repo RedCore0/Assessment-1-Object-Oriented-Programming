@@ -1,0 +1,8 @@
+E:\micha\CMP1903M Object Oriented Programming A01 2223\CMP1903M A01 2223\CMP1903M A01 2223\bin\Debug\CMP1903M A01 2223.exe.config
+E:\micha\CMP1903M Object Oriented Programming A01 2223\CMP1903M A01 2223\CMP1903M A01 2223\bin\Debug\CMP1903M A01 2223.exe
+E:\micha\CMP1903M Object Oriented Programming A01 2223\CMP1903M A01 2223\CMP1903M A01 2223\bin\Debug\CMP1903M A01 2223.pdb
+E:\micha\CMP1903M Object Oriented Programming A01 2223\CMP1903M A01 2223\CMP1903M A01 2223\obj\Debug\CMP1903M A01 2223.csproj.AssemblyReference.cache
+E:\micha\CMP1903M Object Oriented Programming A01 2223\CMP1903M A01 2223\CMP1903M A01 2223\obj\Debug\CMP1903M A01 2223.csproj.SuggestedBindingRedirects.cache
+E:\micha\CMP1903M Object Oriented Programming A01 2223\CMP1903M A01 2223\CMP1903M A01 2223\obj\Debug\CMP1903M A01 2223.csproj.CoreCompileInputs.cache
+E:\micha\CMP1903M Object Oriented Programming A01 2223\CMP1903M A01 2223\CMP1903M A01 2223\obj\Debug\CMP1903M A01 2223.exe
+E:\micha\CMP1903M Object Oriented Programming A01 2223\CMP1903M A01 2223\CMP1903M A01 2223\obj\Debug\CMP1903M A01 2223.pdb
