@@ -107,6 +107,7 @@ namespace CMP1903M_A01_2223
             List<Card> list = new List<Card>();
             for (int i = 0; i < amount; i++)
             {
+                list.Add(pack[i]);
                 deal();
             }
             return list;
