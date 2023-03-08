@@ -21,11 +21,7 @@ namespace CMP1903M_A01_2223
             {
                 for (int Suit = 1; Suit <= 4; Suit++)
                 {
-                    Card card = new Card
-                    {
-                        Value = Value,
-                        Suit = Suit
-                    };
+                    Card card = new Card(Value, Suit);
                     pack.Add(card);
                 }
             }
@@ -60,7 +56,7 @@ namespace CMP1903M_A01_2223
                         Console.WriteLine(shuffled_cards[i].Value + " " + shuffled_cards[i].Suit);
                     }
                     pack = shuffled_cards;
-                    return (true);
+                    return true;
                 case 2:
                     //Riffle Shuffle
                     //Splits list into two and then puts cards from both halves in between eachother
@@ -83,12 +79,12 @@ namespace CMP1903M_A01_2223
                         }
                     }
                     Show();
-                    return (true);
+                    return true;
                 case 3:
+                    //No Shuffle
                     return false;
                 default:
-                    Console.WriteLine("Shuffle type not found");
-                    return false;
+                    throw new Exception("Shuffle type with this index does not exist");
 
             }
         }
@@ -105,25 +101,29 @@ namespace CMP1903M_A01_2223
             return list;
         }
 
-        public static Card deal()
-        {
-            //Deals one card
-            Card CardToDeal = pack[0];
-            pack.Remove(pack[0]);
-            Console.WriteLine("Deal " + CardToDeal.Value + " " + CardToDeal.Suit);
-            return CardToDeal;
-        }
         public static List<Card> dealCard(int amount)
         {
             //Deals the number of cards specified by 'amount'
             List<Card> list = new List<Card>();
             for (int i = 0; i < amount; i++)
             {
-                list.Add(pack[i]);
-                Console.WriteLine("Deals " + pack[i].Value + " " + pack[i].Suit);
-                pack.RemoveAt(i);
+                deal();
             }
             return list;
+        }
+
+        public static Card deal()
+        {
+            //Deals one card
+            if(pack.Count > 0)
+            {
+                Card CardToDeal = pack[0];
+                pack.Remove(pack[0]);
+                Console.WriteLine("Deal " + CardToDeal.Value + " " + CardToDeal.Suit);
+                return CardToDeal;
+            }
+            else { 
+                throw new Exception("There are no more cards in the pack"); }
         }
     }
 }
