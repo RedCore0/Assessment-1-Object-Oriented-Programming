@@ -61,7 +61,21 @@ namespace CMP1903M_A01_2223
                     //Riffle Shuffle
                     //Splits list into two and then puts cards from both halves in between eachother
                     Console.WriteLine("Riffle Shuffle");
+                    
+                    //////////////////////////
                     var Splitted = Split(pack);
+                    List<List<T>> Split<T>(List<T> items, int size = 26)
+                    {
+                        //Splits deck in half for riffle shuffle
+                        var list = new List<List<T>>();
+
+                        for (int i = 0; i < items.Count; i += size)
+                        {
+                            list.Add(items.GetRange(i, Math.Min(size, items.Count - 1)));
+                        }
+                        return list;
+                    }
+                    //////////////////////////
                     pack.Clear();
                     int packOne = 0;
                     int packTwo = 0;
@@ -87,18 +101,6 @@ namespace CMP1903M_A01_2223
                     throw new Exception("Shuffle type with this index does not exist");
 
             }
-        }
-
-        public static List<List<T>> Split<T>(List<T> items, int size = 26)
-        {
-            //Splits deck in half for riffle shuffle
-            var list = new List<List<T>>();
-
-            for (int i = 0; i < items.Count; i+=size)
-            {
-                list.Add(items.GetRange(i, Math.Min(size, items.Count - 1)));
-            }
-            return list;
         }
 
         public static List<Card> dealCard(int amount)
