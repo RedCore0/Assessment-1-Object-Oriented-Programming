@@ -8,13 +8,12 @@ namespace CMP1903M_A01_2223
 {
     internal class Testing
     {
+        //This function allows for testing of Math tutor application
         public void Test()
         {
-            new Pack();
-            Pack.shuffleCardPack(2);
-            Pack.shuffleCardPack(1);
-            Pack.deal();
-            Pack.dealCard(5);
+            LinCode linCode = new LinCode();
+            linCode.Menu();
+            Console.ReadLine();
         }
 
     }

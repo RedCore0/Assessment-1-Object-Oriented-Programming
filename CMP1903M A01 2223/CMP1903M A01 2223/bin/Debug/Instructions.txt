@@ -1,0 +1,8 @@
+Instructions
+To start the maths tutor choose how many cards it should deal.
+If for example you chose to deal 3 cards following will happen:
+	First card's value will represent first number in the equation.
+	Second card's suit will represent the operator, e.g. + or -.
+	Third card's value will represent the second number in the equation.
+You will then have to calculate the sum of those numbers round it to 0 decimal points
+and type it in.

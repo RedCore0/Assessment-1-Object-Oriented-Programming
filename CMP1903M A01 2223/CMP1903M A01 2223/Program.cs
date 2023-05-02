@@ -9,12 +9,11 @@ namespace CMP1903M_A01_2223
 {
     class Program
     {
+        //This code runs when program starts up
         static void Main(string[] args)
         {
             Testing testing =new Testing();
             testing.Test();
-            Console.ReadLine();
-            
         }
     }
 }

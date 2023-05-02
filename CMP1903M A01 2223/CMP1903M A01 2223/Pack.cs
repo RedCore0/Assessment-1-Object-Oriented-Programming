@@ -13,7 +13,6 @@ namespace CMP1903M_A01_2223
     class Pack
     {
         static List<Card> pack = new List<Card>();
-
         public Pack()
         {
             //creates a pack of cards
@@ -25,7 +24,6 @@ namespace CMP1903M_A01_2223
                     pack.Add(card);
                 }
             }
-            Show();
         }
         
         public static void Show()
@@ -45,7 +43,6 @@ namespace CMP1903M_A01_2223
                 case 1:
                     //Fisher-Yates Shuffle
                     //creates new list and places random cards from pack into it
-                    Console.WriteLine("Fisher-Yates Shuffle");
                     List<Card> shuffled_cards = new List<Card>();
                     Random random = new Random();
                     for (int i = 0; i < 52; i++)
@@ -53,7 +50,6 @@ namespace CMP1903M_A01_2223
                         int Rnd = random.Next(pack.Count);
                         shuffled_cards.Add(pack[Rnd]);
                         pack.Remove(pack[Rnd]);
-                        Console.WriteLine(shuffled_cards[i].Value + " " + shuffled_cards[i].Suit);
                     }
                     pack = shuffled_cards;
                     return true;
@@ -78,7 +74,6 @@ namespace CMP1903M_A01_2223
                             packTwo++;
                         }
                     }
-                    Show();
                     return true;
                 case 3:
                     //No Shuffle
@@ -108,7 +103,8 @@ namespace CMP1903M_A01_2223
             for (int i = 0; i < amount; i++)
             {
                 list.Add(pack[i]);
-                deal();
+                Console.WriteLine("Deal " + pack[i].Value + " " + pack[i].Suit);
+                pack.Remove(pack[i]);
             }
             return list;
         }

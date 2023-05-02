@@ -43,7 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Calculation.cs" />
     <Compile Include="Card.cs" />
+    <Compile Include="LinCode.cs" />
     <Compile Include="Testing.cs" />
     <Compile Include="Pack.cs" />
     <Compile Include="Program.cs" />
