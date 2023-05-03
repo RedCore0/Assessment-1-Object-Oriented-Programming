@@ -59,6 +59,7 @@ namespace CMP1903M_A01_2223
                     InputHandling(NumberOfCards);
                     break;
                 case "2":
+                    Menu();
                     break;
                 default:
                     Options(NumberOfCards);

@@ -48,6 +48,10 @@ namespace CMP1903M_A01_2223
                     Console.WriteLine("GoodBye");
                     Environment.Exit(0);
                     break;
+                default:
+                    Console.WriteLine("invalid input");
+                    Menu();
+                    break;
             }
         }
 
